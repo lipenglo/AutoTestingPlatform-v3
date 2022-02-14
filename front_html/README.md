@@ -44,7 +44,7 @@
         firewall-cmd --zone=public --add-port=9091/tcp --permanent
         firewall-cmd --reload
 
-    7.访问站点 http://ip:9091
+    7.访问站点 http://ip:9091 初始用户 admin hbwj@123
 
     
 

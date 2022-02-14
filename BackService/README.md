@@ -52,8 +52,9 @@
     
     配置参数
     1.进入后端根目录
-    2.vim文件 BackService/settings.py
-    3.修改 DATABASES参数:填写新增的数据库名称、IP、用户、密码。 用户密码默认为 root Hbwj@123
+    2.将 _DataFiles/Setup/AutoTesting_v3.sql 文件导入到Mysql库中
+    3.vim文件 BackService/settings.py
+    4.修改 DATABASES参数:填写新增的数据库名称、IP、用户、密码。 用户密码默认为 root Hbwj@123
 
 ### 6.安装RabbitMQ 如有可跳过安装，但需要进入管理台中配置
     1.docker pull rabbitmq:3.6.6-management
