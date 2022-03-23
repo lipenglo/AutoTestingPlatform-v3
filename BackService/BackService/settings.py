@@ -27,11 +27,11 @@ BAKDATA_PATH = f"{BASE_DIR}/_DataFiles/BakData/"
 # endregion
 
 # NginxServer
-NGINX_SERVER = 'http://192.168.2.12:9092/'
+NGINX_SERVER = 'http://127.0.0.1:9092/'
 
 # region Django Celery RabbitMQ
 djcelery.setup_loader()
-BROKER_URL = 'amqp://lipenglo:hbwj@123@192.168.2.8:5672'
+BROKER_URL = 'amqp://admin:Hbwj@123@127.0.0.1:5672'
 CELERY_TIMEZONE = 'UTC'  # 这里很重要,不然会出现分钟执行 小时不执行 这里必须设置这个值
 CELERY_ENABLE_UTC = True
 
@@ -49,7 +49,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
         # 'LOCATION': 'redis://192.168.243.10:6379',  # 测试
-        'LOCATION': 'redis://192.168.2.8:6379',  # GS
+        'LOCATION': 'redis://127.0.0.1:6379',  # GS
         # 'LOCATION': 'redis://172.16.12.3:6379',  # Docker
         # 'LOCATION': 'redis://127.0.0.1:6379',  # 生产
         "OPTIONS": {
@@ -180,7 +180,7 @@ DATABASES = {
         'NAME': 'AutoTesting_v3',
         'USER': 'root',
         'PASSWORD': 'Hbwj@123',
-        'HOST': '192.168.2.8',  # 开发
+        'HOST': '127.0.0.1',  # 开发
         'PORT': '3306',
     }
 }

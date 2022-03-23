@@ -110,7 +110,7 @@ def save_user_info(request):
         obj_db_user = db_UserTable.objects.filter(id=userId)
         if obj_db_user.exists():
             obj_db_DjUser = db_DjUser.objects.get(id=obj_db_user[0].userId)
-            if obj_db_DjUser.exists():
+            if obj_db_DjUser:
                 try:
                     with transaction.atomic():  # 上下文格式，可以在python代码的任何位置使用
                         obj_db_DjUser.password = hashers.make_password(password=password)
@@ -119,8 +119,7 @@ def save_user_info(request):
 
                         # region 处理上传的图片
                         if fileList:
-                            name = fileList[0]['name']
-                            # url = fileList[0]['url']
+                            name = fileList[0].name
                             localhostPath = f"{settings.TEMP_PATH}/{name}"
                             get_file_md5 = cls_Common.get_file_md5(localhostPath)
                             if obj_db_user[0].imgMD5 != get_file_md5:

@@ -107,6 +107,9 @@
     yum install mysql-devel gcc gcc-devel python-devel
     pip3 install mysqlclient
 
+    mac 环境 
+    https://blog.csdn.net/m0_47970692/article/details/114106262
+
 ## Could not find a version that satisfies the requirement numpy==1.13.3
     pip3 install --upgrade pip
 

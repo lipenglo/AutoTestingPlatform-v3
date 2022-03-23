@@ -20,14 +20,14 @@ cls_FileOperations = FileOperations()
 @require_http_methods(["POST"])
 def upLoad_to_temp_path(request):
     response = {
-        'fileList':[]
+        'fileList': []
     }
     try:
-        fileList = [{'paramsName':item_file,'file':request.FILES[item_file]} for item_file in request.FILES]
+        fileList = [{'paramsName': item_file, 'file': request.FILES[item_file]} for item_file in request.FILES]
     except BaseException as e:
         errorMsg = f"入参错误:{e}"
         response['errorMsg'] = errorMsg
-        cls_Logging.record_error_info('ALL', 'upLoad','upLoad_to_temp_path', errorMsg)
+        cls_Logging.record_error_info('ALL', 'upLoad', 'upLoad_to_temp_path', errorMsg)
     else:
         for fileObj in fileList:
             # originalName = fileObj['file'].name# 原始文件名称

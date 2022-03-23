@@ -1,5 +1,6 @@
 Django==2.0.7
-mysqlclient==2.0.3
+#mysqlclient==2.0.3
+pymysql
 djangorestframework==3.12.4
 django-cors-headers==3.10.0
 celery==4.4.7
@@ -18,6 +19,7 @@ dwebsocket==0.4.2
 requests==2.25.1
 loguru
 vine==1.3.0
+setuptools==57.5.0
 anyjson==0.3.3
 croniter
 kombu==4.6.11

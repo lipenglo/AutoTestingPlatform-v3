@@ -14,7 +14,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="2.12-TAP3-PY3.7-虚拟环境" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (ATP3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

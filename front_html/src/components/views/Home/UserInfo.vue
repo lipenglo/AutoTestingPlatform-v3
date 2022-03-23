@@ -140,10 +140,11 @@ export default {
         },
         upload_success(response, file, fileList){
             let self = this;
+            PrintConsole(response)
             //这里的url地址要是网络地址，不然页面上只会加载一个白的图片
             self.RomeData.fileList.push({
-                'name':response['file']['fileName'],
-                'url':store.state.nginxUrl+'Temp/'+response['file']['fileName']}
+                'name':response['fileList'][0]['fileName'],
+                'url':store.state.nginxUrl+'Temp/'+response['fileList'][0]['fileName']}
             );
           
         },

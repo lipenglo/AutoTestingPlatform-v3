@@ -25,9 +25,9 @@ const store = new Vuex.Store({
     passWord:'hbwj@123',
     
     //调试配置
-    BackService:'http://192.168.2.12:9090',
-    nginxUrl:'http://192.168.2.12:9092/',// 注意这里的端口不是网页的端口，是网络目录的地址
-    WebSock:'ws://192.168.2.12:9090',
+    BackService:'http://127.0.0.1:9090',
+    nginxUrl:'http://127.0.0.1:9092/',// 注意这里的端口不是网页的端口，是网络目录的地址
+    WebSock:'ws://127.0.0.1:9090',
 
 
   },
