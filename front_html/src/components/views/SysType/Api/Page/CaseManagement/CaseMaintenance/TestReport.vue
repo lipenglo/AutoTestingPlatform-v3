@@ -387,7 +387,7 @@ export default {
                         self.RomeData.topData.rightData.extractTotal = res.rightData.extractTotal;
                         self.RomeData.topData.rightData.assertionsTotal = res.rightData.assertionsTotal;
                     
-                        self.CreateSocket(res.redisKey,res.leftData.failedTotal);
+                        // self.CreateSocket(res.redisKey,res.leftData.failedTotal);
                         self.loading=false;
                     }
                 }else{

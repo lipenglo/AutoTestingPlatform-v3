@@ -72,10 +72,6 @@ SECRET_KEY = 'hbwj@123'
 # region Request 跨域
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ORIGIN_WHITELIST = (
-#         '*',
-#
-# )  # 跨域增加忽略
 ORS_ALLOW_METHODS = ('DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT', 'VIEW',)
 # 允许的请求头
 CORS_ALLOW_HEADERS = (  # 前端项目设置请求头记得添加到CORS_ALLOW_HEADERS

@@ -1126,8 +1126,7 @@ def edit_data(request):
                                 cuid=userId,
                                 is_read=0,
                                 is_del=0,
-                            )
-                            )
+                            ))
                     db_ApiDynamic.objects.bulk_create(product_list_to_insert)
                     # endregion
             except BaseException as e:  # 自动回滚，不需要任何操作

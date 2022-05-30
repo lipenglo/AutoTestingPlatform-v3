@@ -709,6 +709,7 @@ class RequstOperation(cls_Logging, cls_Common):
 
         return results
 
+    # 请求-前后操作-提取-断言
     def request_operation_extract_validate(self,labelName, onlyCode, getRequestData,
                                            conversionRequestUrl, conversionHeadersData, conversionRequestData,
                                            requestFile, userId):
@@ -804,7 +805,7 @@ class RequstOperation(cls_Logging, cls_Common):
                     })
                 preOperationTable.append(
                     {'operationType': item_pre['operationType'],  # 操作类型
-                     'callName': f"数据库:{dbName} ",  # 调用名称
+                     'callName': f"数据库:{dbName}",  # 调用名称
                      'callResults': str(callResults),  # 调用结果
                      'resultsState': resultsState
                      }

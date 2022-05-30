@@ -52,7 +52,6 @@ class FindTable(cls_Logging):
         obj_db_UserBindRole = db_UserBindRole.objects.filter(is_del=0, user_id=userId)
         if obj_db_UserBindRole.exists():
             return obj_db_UserBindRole[0].role_id
-
         else:
             return None
 
