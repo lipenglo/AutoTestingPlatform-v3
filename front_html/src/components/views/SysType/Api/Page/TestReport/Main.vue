@@ -299,12 +299,12 @@ export default {
         handleReport(index,row){
             let routeUrl = this.$router.resolve({
                 name: "Api_Report",
-                query: {
+                query: {
                     testReportId:row.id,
                     reportType:row.reportType,
                 }
-            });
-            window.open(routeUrl.href, '_blank');
+            });
+            window.open(routeUrl.href, '_blank');
         },
     }
 };
